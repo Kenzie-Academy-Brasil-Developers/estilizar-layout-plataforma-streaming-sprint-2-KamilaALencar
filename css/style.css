@@ -20,19 +20,92 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 }
 
 /*BODY*/
-	body{
-
+	body{background-color: #00002E;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		margin-right: auto;
+		margin-bottom: 15px;
 	}
 
-/*RODAPÉ*/
+	figure figcaption{
+		display: none;
+	}
 	
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		width: 100%;
+		text-align: center;
+	}
+	h2 {
+		color:#fff;
+		font-size: 27px;
+		font-weight: bold;
+		margin: 0 auto 38px auto;
+	}
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 65px;
+	}
+	ul li {
+		width: 186px;
+		cursor: pointer;
+	}
+	ul li img {
+		width: 95%;
+		margin: 15px 0;
+	}
+	ul li img:hover{
+		border: 3px solid #fff;
+	}
+	h3 {
+		color: #fff;
+		margin-top: 15px;
+		font-size: 20px;
+	}
+	.addPerfil img{
+		width: 80%;
+		margin: 20px 0 10px 0;
+	}
+
+	footer button{
+	font-size: 19px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    width: 180px;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 auto 25px auto;
+	}
+
+
+	@media only screen and (min-width:400px){
+		h2{
+			font-size: 35px;
+		}
+		ul {
+			width: 858px;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.addPerfil img{
+			margin-bottom: 42px;
+		}
 		
+		footer button{
+			margin-top: 55px;
+
+		}
+
 	}
